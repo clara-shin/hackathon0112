@@ -43,6 +43,7 @@ body {
     font-family: 'Noto Sans Regular', sans-serif;
     font-size:140%;
     color:#181818;
+    background-color:#f1f1f1;
 }
 
 a:link, a:visited{
@@ -76,7 +77,11 @@ img{
 
 
 
-.wrap{}
+.wrap{
+    background: #fff;
+    width: 490px;
+    margin: 0 auto;
+}
   .header, .container, .footer{
     width:490px;
     margin: 0 auto;
@@ -131,9 +136,13 @@ img{
     text-align: right;
     position:absolute; 
     top:0; 
-    right: 10px;
+    right: 0;
+    font-size:0;
   }
-
+  .curr-time-value{
+    font-size:18px;
+    color:#666666;
+  }
   .weather-data{
     height: 160px;
     border: 1px solid #ddd;
@@ -163,7 +172,7 @@ img{
     margin-top:10px;
   }
   .degree{
-    font-size: 350%;
+    font-size: 300%;
     line-height: 120px;
   }
   .deg-unit{
@@ -217,12 +226,12 @@ img{
 
   .weather-quater-state{
     width: 100%;
-    height: 130px;
+    height: 140px;
   }
   .q-state{
     width:25%;
     float: left;
-    /* background-color:gold; */
+    margin-top: 20px;
   }
   .q-state:nth-child(odd){
     background-color: #f2f2f2;
@@ -246,8 +255,13 @@ img{
     transform: translateX(61%);
   }
   .q-state .weather-state{
-    margin-top:50px;
     margin-left: 0px;
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    width: 100%;
   }
 
   .q-state .degree{
@@ -271,3 +285,82 @@ img{
     text-align: center;
   }
   
+  /* 아이템목록페이지 */
+  .item{
+    width: 490px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background: #fff;
+  } /*section*/
+  .item-content{
+    position: relative;
+    min-height: 200px; 
+    /* background-color: gray; */
+  }
+  .item{
+  }
+  .item-content-heading{
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+  }
+  .star{
+    color:#43AAD3;
+    text-shadow: 1px 1px 1px rgb(45, 110, 136);
+  }
+  .item-data{
+    position: relative;
+    height:120px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    
+  }
+  .item-data-name{
+    position: absolute;
+    top: 30px;
+    left: 135px;
+    display: inline-block;
+    /* background-color: gold; */
+    width: 280px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .item-data > p{
+    float: left;
+  }
+  .item-data .left{
+    width: 80px;
+    height:80px;
+    float: left;
+  }
+  .item-data .right{
+    margin-left: 15px;
+    padding-top: 35px;
+    width: 300px;
+    float: left;
+  }
+  .dc-price{
+    display: inline-block;
+    width: 202px;
+    color: #181818;
+    font-size: 18px;
+    line-height:30px;
+    text-align: right;
+  }
+  .delivery{
+    display:inline-block;
+    width: 70px;
+    color: #f00;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .origin-price{
+    display: block;
+    text-decoration: line-through;
+    color:#aaa;
+    font-size:15px;
+    text-align: right;
+    line-height:20px;
+    margin-right: 3px;
+  }
