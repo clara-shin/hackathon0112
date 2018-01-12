@@ -24,7 +24,7 @@
       this.client_id = "stared";
       this.response_type = "token";
       this.scope = "";
-      this.redirect_uri = "http://localhost:5500/";
+      this.redirect_uri = "https://jolly-goldberg-d7e000.netlify.com/";
       // saving token in cookie or localstorage
       // default is true
       this.savingToken = true;
