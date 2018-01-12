@@ -192,7 +192,13 @@ img{
   }
   .search-item a:link, .search-item a:visited{
     display: block;
-    background-color: #43AAD3;
+    background-image:
+      url("./image/11st-bg.jpg");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
   }
   .search-item a:hover, .search-item a:focus{
     outline: 2px dashed #f00;
